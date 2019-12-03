@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Detail Bottom Pop Controller-->
+        <scene sceneID="d4N-N8-2NN">
+            <objects>
+                <viewController storyboardIdentifier="UserDetailBottomPopController" id="09s-Ti-3k1" customClass="UserDetailBottomPopController" customModule="MyNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gaG-K7-T5x"/>
+                        <viewControllerLayoutGuide type="bottom" id="jVb-2b-Iig"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c2f-1N-jfw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_118x58_" translatesAutoresizingMaskIntoConstraints="NO" id="3jp-nx-4ka">
+                                <rect key="frame" x="-10" y="34" width="434" height="828"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z38-oq-ikP">
+                                <rect key="frame" x="0.0" y="54" width="414" height="793"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Z38-oq-ikP" secondAttribute="trailing" id="4Ug-Ru-9Vr"/>
+                            <constraint firstItem="jVb-2b-Iig" firstAttribute="top" secondItem="Z38-oq-ikP" secondAttribute="bottom" constant="15" id="PKg-Jp-v21"/>
+                            <constraint firstItem="Z38-oq-ikP" firstAttribute="leading" secondItem="c2f-1N-jfw" secondAttribute="leading" id="aAe-4o-Jtw"/>
+                            <constraint firstAttribute="trailing" secondItem="3jp-nx-4ka" secondAttribute="trailing" constant="-10" id="dpd-ew-dua"/>
+                            <constraint firstItem="jVb-2b-Iig" firstAttribute="top" secondItem="3jp-nx-4ka" secondAttribute="bottom" id="uU4-ha-2OJ"/>
+                            <constraint firstItem="Z38-oq-ikP" firstAttribute="top" secondItem="gaG-K7-T5x" secondAttribute="bottom" constant="10" id="wKP-bH-DWN"/>
+                            <constraint firstItem="3jp-nx-4ka" firstAttribute="top" secondItem="gaG-K7-T5x" secondAttribute="bottom" constant="-10" id="ykF-1e-I4x"/>
+                            <constraint firstItem="3jp-nx-4ka" firstAttribute="leading" secondItem="c2f-1N-jfw" secondAttribute="leading" constant="-10" id="zcj-Gz-vyg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rTableView" destination="Z38-oq-ikP" id="tkw-MT-Dmy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gTg-Ls-LPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.637681159420293" y="-114.1304347826087"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="popup_118x58_" width="118" height="58"/>
+    </resources>
+</document>

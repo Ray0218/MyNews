@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeNavigationBar" customModule="MyNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cto-B5-YSx">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75h-TV-AmZ" customClass="AnimatableButton" customModule="IBAnimatable">
+                            <rect key="frame" x="5" y="7" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="5qv-sp-hNs"/>
+                                <constraint firstAttribute="height" constant="30" id="Gp5-sQ-Ltn"/>
+                            </constraints>
+                            <state key="normal" title=" " image="home_no_login_head"/>
+                            <connections>
+                                <action selector="pvt_avastarClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="WDq-DI-1B4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bO-bY-Psq" customClass="AnimatableButton" customModule="IBAnimatable">
+                            <rect key="frame" x="50" y="7" width="359" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="8dO-bE-vWg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="搜索内容" image="search_small_16x16_">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="pvt_searchButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="RoX-pb-JSM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="75h-TV-AmZ" firstAttribute="leading" secondItem="cto-B5-YSx" secondAttribute="leading" constant="5" id="3dY-gP-nQu"/>
+                        <constraint firstItem="75h-TV-AmZ" firstAttribute="centerY" secondItem="cto-B5-YSx" secondAttribute="centerY" id="BNT-X0-yNm"/>
+                        <constraint firstAttribute="height" constant="44" id="FVd-iR-SDG"/>
+                        <constraint firstItem="1bO-bY-Psq" firstAttribute="centerY" secondItem="cto-B5-YSx" secondAttribute="centerY" id="JnF-tz-gcN"/>
+                        <constraint firstItem="1bO-bY-Psq" firstAttribute="leading" secondItem="75h-TV-AmZ" secondAttribute="trailing" constant="15" id="Jtg-zD-WJw"/>
+                        <constraint firstAttribute="trailing" secondItem="1bO-bY-Psq" secondAttribute="trailing" constant="5" id="eLA-pQ-rLm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cto-B5-YSx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ANe-i3-bRT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cto-B5-YSx" secondAttribute="trailing" id="SkW-OQ-uve"/>
+                <constraint firstAttribute="bottom" secondItem="cto-B5-YSx" secondAttribute="bottom" id="vij-QZ-gVL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="rAvatarButton" destination="75h-TV-AmZ" id="SZt-Wh-rBu"/>
+                <outlet property="rSearchButton" destination="1bO-bY-Psq" id="6Yd-Oi-lOF"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_no_login_head" width="38" height="38"/>
+        <image name="search_small_16x16_" width="16" height="16"/>
+    </resources>
+</document>

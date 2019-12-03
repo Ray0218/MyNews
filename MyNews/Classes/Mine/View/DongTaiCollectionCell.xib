@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DongTaiCollectionCell" customModule="MyNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X6p-9Y-bEn">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDF-UE-CsZ">
+                        <rect key="frame" x="15" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="OhN-NQ-SmD"/>
+                            <constraint firstAttribute="height" constant="20" id="kD5-oQ-hI9"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="X6p-9Y-bEn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7v6-pw-aFD"/>
+                <constraint firstItem="X6p-9Y-bEn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="W7L-j6-CnQ"/>
+                <constraint firstItem="QDF-UE-CsZ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="gF5-h8-xRN"/>
+                <constraint firstAttribute="trailing" secondItem="X6p-9Y-bEn" secondAttribute="trailing" id="pMS-yn-ih9"/>
+                <constraint firstItem="QDF-UE-CsZ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="sVV-uh-V2p"/>
+                <constraint firstAttribute="bottom" secondItem="X6p-9Y-bEn" secondAttribute="bottom" id="tTF-Mi-oor"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="rIconButton" destination="QDF-UE-CsZ" id="thp-av-QfH"/>
+                <outlet property="rThunmImage" destination="X6p-9Y-bEn" id="XcT-NZ-lN0"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

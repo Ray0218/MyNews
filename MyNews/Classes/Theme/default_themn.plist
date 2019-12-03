@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>images</key>
+	<dict>
+		<key>home_no_login_head</key>
+		<string>home_no_login_head</string>
+		<key>publishSelectButton</key>
+		<string>feed_publish_press_44x44_</string>
+		<key>publishButton</key>
+		<string>feed_publish_44x44_</string>
+		<key>favorButton</key>
+		<string>favoriteicon_profile_24x24_</string>
+		<key>historyButton</key>
+		<string>history_profile_24x24_</string>
+		<key>daynightButton</key>
+		<string>nighticon_profile_24x24_</string>
+		<key>telButton</key>
+		<string>cellphoneicon_login_profile_66x66_</string>
+		<key>wetchatButton</key>
+		<string>weixinicon_login_profile_66x66_</string>
+		<key>qqButton</key>
+		<string>qqicon_login_profile_66x66_</string>
+		<key>sinaButton</key>
+		<string>sinaicon_login_profile_66x66_</string>
+	</dict>
+	<key>colors</key>
+	<dict>
+		<key>navbartintColor</key>
+		<string>#c44943</string>
+		<key>tabbarColor</key>
+		<string>#f5a5d5</string>
+		<key>threeColor</key>
+		<string>#000000</string>
+		<key>black</key>
+		<string>#ffffff</string>
+		<key>moreLoginBacColor</key>
+		<string>#000060</string>
+		<key>morLoginTextColor</key>
+		<string>#ffffff</string>
+	</dict>
+</dict>
+</plist>
